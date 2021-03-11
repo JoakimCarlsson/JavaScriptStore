@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container col-lg-4">
+        <div class="border">
+            <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div>
+            <div class="px-4 py-5">
+                <h4 class="mt-5 theme-color mb-5">Thanks for your order</h4> <span class="theme-color">Payment
+                    Summary</span>
+                <div class="mb-3">
+                    <hr class="new1">
+                </div>
+                <div id="orderedItems">
+                    </div>
+                </div>
+            </div>
+            <div class="text-md-left">
+                <a class="btn btn-outline-dark btn-sm" href="index.html">
+                    <i class="fas fa-long-arrow-alt-left ml-2"></i>Back to store
+                </a>
+            </div>
+        </div>
+    <script src="js/totalOrder.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderOrderConfirmation();
+        });
+    </script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</body>
+
+</html>

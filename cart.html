@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;800&amp;display=swap">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Super Bad WebShop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="cart.html">Cart
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End Navigation-->
+  <div class="container">
+    <section class="py-5">
+      <h2 class="h5 text-uppercase mb-4">Shopping cart</h2>
+      <div class="row">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <!-- Cart Table -->
+          <div class="table-responsive mb-4">
+            <table class="table">
+              <thead class="bg-light">
+                <tr>
+                  <th class="border-0" scope="col"> <strong class="text-small text-uppercase">Product</strong></th>
+                  <th class="border-0" scope="col"> <strong class="text-small text-uppercase">Price</strong></th>
+                  <th class="border-0" scope="col"> <strong class="text-small text-uppercase">Quantity</strong></th>
+                  <th class="border-0" scope="col"> <strong class="text-small text-uppercase">Total</strong></th>
+                  <th class="border-0" scope="col"> </th>
+                </tr>
+              </thead>
+              <tbody id="cartBody">
+              </tbody>
+            </table>
+          </div>
+          <!-- Cart Nav -->
+          <div class="bg-light px-4 py-3">
+            <div class="row align-items-center text-center">
+              <div class="col-md-6 mb-3 mb-md-0 text-md-left"><a class="btn btn-link p-0 text-dark btn-sm"
+                  href="index.html"><i class="fas fa-long-arrow-alt-left mr-2"> </i>Continue shopping</a></div>
+              <div class="col-md-6 text-md-right"><a class="btn btn-outline-dark btn-sm" href="checkout.html">Procceed
+                  to checkout<i class="fas fa-long-arrow-alt-right ml-2"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- Order Total -->
+        <div class="col-lg-4">
+          <div class="card border-0 rounded-0 p-lg-4 bg-light">
+            <div class="card-body">
+              <h5 class="text-uppercase mb-4">Cart total</h5>
+              <ul class="list-unstyled mb-0" id="totalOrder">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/cart.js"></script>
+  <script src="js/totalOrder.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      getAllCartItems();
+      renderOrder()
+    });
+  </script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</body>
+
+</html>
