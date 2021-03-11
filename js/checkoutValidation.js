@@ -1,7 +1,7 @@
 
 //This is a very basic validation form, we use it too confirm that the user have entered all values properly.
 //If the user have entered everything proplery he can submit and then go to confirmation.html
-//TODO, FIX ME. :)
+//TODO, FIX ME. :) 
 function validateForm() {
     let name = document.forms["checkoutForm"]["name"].value;
     let address = document.forms["checkoutForm"]["address"].value;
